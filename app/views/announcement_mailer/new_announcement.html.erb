@@ -1,5 +1,4 @@
-<h1>Announcement#new_announcement</h1>
-
-<p>
-  <%= @greeting %>, find me in app/views/announcement_mailer/new_announcement.html.erb
-</p>
+ <h2>Bonjour,</h2>
+<h5> Une nouvelle annonce, <%= @announcement.title %> vient d'être publiée, et peut être facturée au client <%= @announcement.customer_name %>.</h5>
+<p>Pour générer la facture, rendez-vous sur la page <%= link_to "ici", @url %>.</p>
+<h2>Bonne journée !</h2>
