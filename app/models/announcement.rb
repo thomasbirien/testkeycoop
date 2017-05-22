@@ -1,4 +1,5 @@
 class Announcement < ApplicationRecord
+  belongs_to :bill
   after_create :deliver_mail
 
   def date_format
