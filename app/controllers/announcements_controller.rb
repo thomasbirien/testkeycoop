@@ -1,4 +1,5 @@
 class AnnouncementsController < ApplicationController
+  http_basic_authenticate_with name:"facturation@example.com", password:"password"
 
   def index
     @announcements = Announcement.all
