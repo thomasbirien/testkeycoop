@@ -3,6 +3,6 @@ class Announcement < ApplicationRecord
 
   private
   def deliver_mail
-    AnnouncementMailer.new_announcement(Announcement.last.id).deliver_now
+    AnnouncementMailer.new_announcement(Announcement.last.id).deliver_later
   end
 end
