@@ -35,28 +35,28 @@
     <% @announcements.each do |announcement| %>
       <tr>
         <td>
-          <div class="card">
+          <div class="card-center">
             <div class="circle">
               <%= announcement.customer_name %>
             </div>
           </div>
         </td>
         <td>
-          <div class="card">
+          <div class="card-center">
             <p>
             <%= announcement.title %>
             </p>
           </div>
         </td>
         <td>
-          <div class="card">
+          <div class="card-center">
             <p>
-              <%= announcement.created_at%>
+              <%= announcement.date_format%>
             </p>
           </div>
         </td>
         <td>
-          <div class="card">
+          <div class="card-center">
               <p>
                 facture
               </p>
