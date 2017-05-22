@@ -1,0 +1,33 @@
+.circle {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #E9EBEE;
+  border-radius: 50%;
+  width: 75px;
+  height: 75px;
+}
+
+.card-center {
+  height: 7em;
+  position: relative;
+  margin: 13px;
+}
+
+.card-center p {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+}
+
+.card-center h5 {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+}

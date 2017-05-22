@@ -1,0 +1,68 @@
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <td>
+        <div class="card-center">
+          <h5>
+            client
+          </h5>
+        </div>
+      </td>
+      <td>
+        <div class="card-center">
+          <h5>
+            annonce
+          </h5>
+        </div>
+      </td>
+      <td>
+        <div class="card-center">
+          <h5>
+            date de publication
+          </h5>
+        </div>
+      </td>
+      <td>
+        <div class="card-center">
+          <h5>
+            facture
+          </h5>
+        </div>
+      </td>
+    </tr>
+  </thead>
+  <tbody>
+    <% @announcements.each do |announcement| %>
+      <tr>
+        <td>
+          <div class="card">
+            <div class="circle">
+              <%= announcement.customer_name %>
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="card">
+            <p>
+            <%= announcement.title %>
+            </p>
+          </div>
+        </td>
+        <td>
+          <div class="card">
+            <p>
+              <%= announcement.created_at%>
+            </p>
+          </div>
+        </td>
+        <td>
+          <div class="card">
+              <p>
+                facture
+              </p>
+          </div>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
