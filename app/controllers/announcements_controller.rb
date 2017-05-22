@@ -1,4 +1,8 @@
 class AnnouncementsController < ApplicationController
+
+  def index
+    @announcement = Announcement.all
+  end
   def create
     @announcement = Announcement.new({
       title: params[:data][:attributes][:job_offer][:title],
