@@ -1,6 +1,5 @@
 class AnnouncementsController < ApplicationController
   def create
-    raise
     @announcement = Announcement.new({
       title: params[:data][:attributes][:job_offer][:title],
       description: params[:data][:attributes][:job_offer][:description],
