@@ -5,8 +5,7 @@ class BillsController < ApplicationController
       format.pdf do
         render pdf: "facture",
                layout: "pdf.html.erb",
-               page_size: "A4",
-               zoom: 5
+               page_size: "A4"
       end
       format.html
     end
