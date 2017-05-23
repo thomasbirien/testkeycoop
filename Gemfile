@@ -27,6 +27,10 @@ group :development, :test do
   gem 'pry-byebug'
   gem 'better_errors'
   gem 'binding_of_caller'
+  gem 'rspec-rails', '~> 3.5'
+  gem 'capybara'
+  gem 'factory_girl'
+  gem 'factory_girl_rails'
 end
 
 group :development do
