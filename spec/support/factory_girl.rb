@@ -1,12 +1,16 @@
 RSpec.configure do |config|
   config.include FactoryGirl::Syntax::Methods
-end
 
-# RSpec without Rails
-RSpec.configure do |config|
-  config.include FactoryGirl::Syntax::Methods
+ config.before :suite do
+  DatabaseCleaner.strategy = :transaction
+  DatabaseCleaner.clean_with :truncation
 
-  config.before(:suite) do
-    FactoryGirl.find_definitions
+    begin
+      DatabaseCleaner.start
+      FactoryGirl.lint unless config.files_to_run.one?
+    ensure
+      DatabaseCleaner.clean
+    end
   end
 end
+
