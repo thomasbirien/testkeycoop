@@ -16,4 +16,17 @@ class AnnouncementsController < ApplicationController
       head :no_content
     end
   end
+
+  def edit
+    @announcement = Announcement.find(params[:id])
+    update
+  end
+
+  def update
+    new_info = Hash.new
+    new_info[:bill_id] = params[:format]
+    if @announcement.update(new_info)
+      redirect_to announcements_path
+    end
+  end
 end
