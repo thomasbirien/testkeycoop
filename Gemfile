@@ -21,6 +21,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'sidekiq'
 gem 'bootstrap-sass'
 gem 'autoprefixer-rails'
+gem 'rspec'
 
 group :development, :test do
   gem 'byebug', platform: :mri
