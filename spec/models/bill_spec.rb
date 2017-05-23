@@ -11,3 +11,15 @@ describe Bill, '#date_format' do
     expect(result).to eq date_number
   end
 end
+
+describe Bill do
+  it "should have valid factory" do
+    bill = build(:bill)
+    bill.should be_valid
+  end
+
+  it "should require a reference bill" do
+    bill = build(:bill, reference_bill: "")
+    bill.should_not be_valid
+  end
+end
