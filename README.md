@@ -1,24 +1,16 @@
-# README
+Bonjour voici le test réalisé en plusieurs étapes :
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+- travail préliminaire sur les différentes étapes du test(recherche sur l'utilisation des gems et des algo)
+- écriture du test
+- tentative d'écriture de test avec rspec pour la première fois.
 
-Things you may want to cover:
 
-* Ruby version
+Ce test fut intéressant sur des utilisations différentes (surtout pour la génération de pdf), l'écriture des test rest très sommaire.
 
-* System dependencies
 
-* Configuration
+Les difficultés se sont révélés sur l'écriture de test :
 
-* Database creation
+- première écriture
+- trouver des réponses sur internet à cause de l'ancienne syntax (Factory girls)
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+temps total estimé : 5 jours (avec environ 7h de travail par jours)
