@@ -57,9 +57,15 @@
         </td>
         <td>
           <div class="card-center">
+            <% if announcement.bill_id == nil %>
               <p>
-                facture
+                <%= link_to "facture", announcement_bills_path(announcement), method: :post %>
               </p>
+            <% else %>
+              <p>
+                ref :  <%= announcement.bill.reference_bill %>
+              </p>
+            <% end %>
           </div>
         </td>
       </tr>
