@@ -1,6 +1,10 @@
 class AnnouncementsController < ApplicationController
+  http_basic_authenticate_with name:"facturation@example.com", password:"password"
+
+  def index
+    @announcements = Announcement.all
+  end
   def create
-    raise
     @announcement = Announcement.new({
       title: params[:data][:attributes][:job_offer][:title],
       description: params[:data][:attributes][:job_offer][:description],
