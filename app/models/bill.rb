@@ -1,5 +1,6 @@
 class Bill < ApplicationRecord
   belongs_to :announcement
+  validates :reference_bill, uniqueness: true, presence: true
 
   def self.reference(customer)
     bills = Bill.all
