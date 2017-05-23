@@ -23,4 +23,9 @@ class Bill < ApplicationRecord
     end
     return ref_build
   end
+
+   def date_format
+    date_wrong_format = self.created_at
+    date_good_format = date_wrong_format.strftime('%d/%m/%Y')
+  end
 end

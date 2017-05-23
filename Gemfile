@@ -9,6 +9,8 @@ end
 gem 'rails', '~> 5.0.3'
 gem 'pg', '~> 0.18'
 gem 'awesome_print'
+gem 'wicked_pdf'
+gem 'wkhtmltopdf-binary'
 gem 'puma', '~> 3.0'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'

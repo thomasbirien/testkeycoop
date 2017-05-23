@@ -64,6 +64,7 @@
             <% else %>
               <p>
                 ref :  <%= announcement.bill.reference_bill %>
+                <%= link_to "pdf", announcement_bill_path(announcement, announcement.bill_id, format: :pdf)  %>
               </p>
             <% end %>
           </div>
