@@ -1,6 +1,9 @@
 require "rails_helper"
+require 'database_cleaner'
 
 describe Bill, '#date_format' do
+    DatabaseCleaner.strategy = :truncation
+    DatabaseCleaner.start
   it 'returns a date like dd/mm/yyyy' do
     bill = create(:bill)
     date = DateTime.now.to_date
@@ -10,6 +13,7 @@ describe Bill, '#date_format' do
 
     expect(result).to eq date_number
   end
+  DatabaseCleaner.clean
 end
 
 describe Bill do
